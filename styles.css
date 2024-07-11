@@ -121,3 +121,38 @@ p{
 .card h4{
     margin-bottom: 15px;
 }
+
+#our-project{
+    padding: 100px 375px 100px 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our-project h2{
+    margin-bottom: 60px;
+}
+
+#our-project img{
+    width: 660px;
+    height: 550px;
+}
+
+.project-details{
+    display: flex;
+    gap: 30px;
+}
+
+.project-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-items .item{
+    padding: 35px;
+    background-color: #F6F6F6;
+}
+
+.item:nth-child(2){
+    background-color: #FF3147;
+}
