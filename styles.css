@@ -1,3 +1,7 @@
+/******************
+Styles CSS
+******************/
+
 h1{
     text-align: left;
     letter-spacing: 0px;
@@ -33,6 +37,10 @@ p{
     opacity: 1;
     font-size: 15px;
 }
+
+/******************
+Hero Section
+******************/
 
 #hero{
     height: 100vh;
@@ -71,14 +79,13 @@ p{
     border: none;
 }
 
+/******************
+About Section
+******************/
+
 #about{
     background-color: #FAFAFA;
     padding: 100px 375px 100px 375px;
-}
-
-#about img{
-    height: 526px;
-    width: 370px;
 }
 
 .about-header{
@@ -122,6 +129,10 @@ p{
     margin-bottom: 15px;
 }
 
+/******************
+Our Project Section
+******************/
+
 #our-project{
     padding: 100px 375px 100px 375px;
     display: flex;
@@ -157,6 +168,10 @@ p{
     background-color: #FF3147;
 }
 
+/******************
+Growth Section
+******************/
+
 #growth{
     padding: 100px 375px 100px 375px;
     display: flex;
@@ -174,6 +189,7 @@ p{
     border: none;
     padding: 30px;
     align-items: center;
+    cursor: pointer;
 }
 
 #growth .card:hover{
@@ -189,6 +205,10 @@ p{
     margin-bottom: 15px;
     font-size: 50px;
 }
+
+/******************
+Feedback Section
+******************/
 
 #feedback{
     padding: 100px 375px 100px 375px;
@@ -230,6 +250,10 @@ p{
     font-weight: 100;
 }
 
+/******************
+Footer
+******************/
+
 footer{
     height: 310px;
     background-image: url(./public/footer.png);
@@ -240,4 +264,160 @@ footer{
 
 footer img{
     height: 56px;
+}
+
+/******************
+Slider classes
+******************/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__container{
+    position: relative;
+    height: 600px;
+}
+  
+.card__content {
+    overflow: hidden;
+}
+
+.card__article {
+    height: 526px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__article:hover {
+    transform: scale(1.05);
+}
+
+.card__image {
+    position: relative;
+}
+
+.card__img {
+    height: 526px;
+    width: 370px;
+}
+
+.card__data {
+    background-color: #FF3147;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    z-index: 50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+
+.card__article:hover .card__data {
+    transform: translateY(0);
+}
+
+.card__data p {
+    color: #ffffff;
+}
+
+.card__data h3 {
+    color: #ffffff;
+}
+
+.card__data button {
+    background-color: #ffffff;
+    height: 50px;
+    width: 185px;
+    border: none;
+    font-size: 15px;
+    color: #FF3147;
+}
+
+.card__data button img {
+    height: 8px;
+    margin-left: 10px;
+}
+
+.card-icon {
+    height: 57px;
+}
+
+.card__shadow {
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color-alt);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card__article:hover .card__shadow {
+    opacity: 1;
+}
+
+.card__name {
+    font-size: var(--h2-font-size);
+    color: var(--second-color);
+    margin-bottom: .75rem;
+}
+
+.card__description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    text-align: center;
+}
+
+.card__button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.card__button:hover{
+    opacity: 0.9;
+    box-shadow: 3px 6px 20px #672C2C1F;
+}
+
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: url('./public/nav-n.svg') no-repeat center;
+    background-size: contain;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px;
+    height: 30px;
+    background: url('./public/nav-a.svg') no-repeat center;
+    background-size: contain;
 }
