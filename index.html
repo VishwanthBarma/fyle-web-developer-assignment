@@ -22,14 +22,46 @@
           <h1>DIGITAL MARKETING AGENCY</h1>
           <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
              Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
-          <button>CONTACT US</button>
+          <button id="contactButton">CONTACT US</button>
         </div>
         <div class="hero-right">
           <img src="./public/hero.png">
         </div>
       </div>
-
     </section>
+
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup">
+      <form id="contactForm" class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+    
+        <div class="form-section">
+          <label for="work-email" class="form-label">Work email*</label>
+          <input type="email" id="work-email" name="work-email" required class="form-input">
+        </div>
+    
+        <div class="form-section">
+          <label for="first-name" class="form-label">First name*</label>
+          <input type="text" id="first-name" name="first-name" required class="form-input">
+        </div>
+    
+        <div class="form-section">
+          <label for="last-name" class="form-label">Last name*</label>
+          <input type="text" id="last-name" name="last-name" required class="form-input">
+        </div>
+    
+        <div class="form-section checkbox-container">
+          <input type="checkbox" id="agree" name="agree" checked>
+          <label for="agree">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+        </div>
+    
+        <button type="submit">Contact us</button>
+      </form>
+    </div>
+    
+    
+
 
     <!-- About Section -->
     <section id="about">
