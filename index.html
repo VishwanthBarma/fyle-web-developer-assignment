@@ -34,25 +34,27 @@
     <div id="popupForm" class="popup">
       <form id="contactForm" class="popup-content">
         <span class="close">&times;</span>
-        <h2>Contact Us</h2>
+        <h2>Talk to us</h2>
     
         <div class="form-section">
+          <input type="email" id="work-email" name="work-email" required class="form-input" placeholder=" ">
           <label for="work-email" class="form-label">Work email*</label>
-          <input type="email" id="work-email" name="work-email" required class="form-input">
         </div>
     
-        <div class="form-section">
-          <label for="first-name" class="form-label">First name*</label>
-          <input type="text" id="first-name" name="first-name" required class="form-input">
-        </div>
+        <div class="form-fullname">
+          <div class="form-section">
+            <input type="text" id="first-name" name="first-name" required class="form-input" placeholder=" ">
+            <label for="first-name" class="form-label">First name*</label>
+          </div>
     
-        <div class="form-section">
-          <label for="last-name" class="form-label">Last name*</label>
-          <input type="text" id="last-name" name="last-name" required class="form-input">
+          <div class="form-section">
+            <input type="text" id="last-name" name="last-name" required class="form-input" placeholder=" ">
+            <label for="last-name" class="form-label">Last name*</label>
+          </div>
         </div>
     
         <div class="form-section checkbox-container">
-          <input type="checkbox" id="agree" name="agree" checked>
+          <input type="checkbox" id="agree" name="agree" checked required>
           <label for="agree">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
         </div>
     
@@ -60,8 +62,6 @@
       </form>
     </div>
     
-    
-
 
     <!-- About Section -->
     <section id="about">
@@ -72,9 +72,8 @@
            Morbi sed lacus nec risus finibus feugiat et fermentum</p>
       </div>
       <div>
+
         <!-- Slider -->
-
-
         <section class="container">
           <div class="card__container swiper">
              <div class="card__content">
@@ -156,8 +155,6 @@
           </div>
        </section>
 
-
-
       </div>
     </section>
 
@@ -218,8 +215,7 @@
       </div>
     </section>
     
-    
-
+  
     <!-- Experts Growth Section -->
     <section id="growth">
       <h3>EXPERTS GROWTH</h3>

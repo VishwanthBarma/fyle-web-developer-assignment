@@ -1,7 +1,6 @@
 /******************
 Styles CSS
 ******************/
-
 h1{
     text-align: left;
     letter-spacing: 0px;
@@ -42,7 +41,6 @@ p{
 /******************
 Hero Section
 ******************/
-
 #hero{
     height: 100vh;
 }
@@ -98,7 +96,11 @@ Hero Section
     background-color: rgba(0,0,0,0.5);
   }
 
-  .popup button{
+  .popup h2{
+    margin-bottom: 30px;
+  }
+  
+  .popup button {
     height: 50px;
     background: #FF3147;
     border-radius: 2px;
@@ -106,17 +108,17 @@ Hero Section
     color: #ffffff;
     border: none;
     width: 100%;
-    font-family: 700;
+    font-weight: 700;
     font-size: 18px;
   }
   
   .popup-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 520px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -136,50 +138,84 @@ Hero Section
   }
   
   .form-section {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-fullname {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
   
   .form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    transition: font-size 0.3s ease-out, margin-bottom 0.3s ease-out;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
   }
   
   .form-input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
     font-size: 16px;
     transition: border-color 0.3s ease-out;
+    background-color: transparent;
   }
   
   .form-input:focus {
     outline: none;
-    border-color: #FF3147;
+    border-bottom-color: #FF3147;
   }
   
-  .form-input:focus + .form-label {
-    font-size: 14px;
-    margin-bottom: 4px;
-  }
-
-  .checkbox-container{
-    display: flex;
-    gap: 10px;
-  }
-
-  #agree {
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    top: -20px;
+    font-size: 12px;
     color: #FF3147;
   }
   
-
-
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #agree {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF3147;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #agree:checked::before {
+    content: '✔';
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+  }
+  
+  #agree:checked {
+    background-color: #FF3147;
+  }
+  
+  
 /******************
 About Section
 ******************/
-
 #about{
     background-color: #FAFAFA;
     padding: 100px 375px 100px 375px;
@@ -226,10 +262,10 @@ About Section
     margin-bottom: 15px;
 }
 
+
 /******************
 Our Project Section
 ******************/
-
 #our-project {
     padding: 100px 375px;
     display: flex;
@@ -295,7 +331,6 @@ Our Project Section
 /******************
 Growth Section
 ******************/
-
 #growth{
     padding: 100px 375px 100px 375px;
     display: flex;
@@ -330,10 +365,10 @@ Growth Section
     font-size: 50px;
 }
 
+
 /******************
 Feedback Section
 ******************/
-
 #feedback{
     padding: 100px 375px 100px 375px;
     display: flex;
@@ -374,10 +409,10 @@ Feedback Section
     font-weight: 100;
 }
 
+
 /******************
 Footer
 ******************/
-
 footer{
     height: 310px;
     background-image: url(./public/footer.png);
@@ -390,10 +425,10 @@ footer img{
     height: 56px;
 }
 
+
 /******************
 Slider classes
 ******************/
-
 .container {
     display: flex;
     justify-content: center;
