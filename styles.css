@@ -230,40 +230,67 @@ About Section
 Our Project Section
 ******************/
 
-#our-project{
-    padding: 100px 375px 100px 375px;
+#our-project {
+    padding: 100px 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#our-project h2{
+  }
+  
+  #our-project h2 {
     margin-bottom: 60px;
-}
-
-#our-project img{
+  }
+  
+  .image-container {
+    position: relative;
     width: 660px;
     height: 550px;
-}
-
-.project-details{
+  }
+  
+  .project-image {
+    width: 660px;
+    height: 550px;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .project-details {
     display: flex;
     gap: 30px;
-}
-
-.project-items{
+  }
+  
+  .project-items {
     display: flex;
     flex-direction: column;
-}
-
-.project-items .item{
+    gap: 20px;
+  }
+  
+  .project-items .item {
     padding: 35px;
-    background-color: #F6F6F6;
-}
+    background-color: #f6f6f6;
+    height: 170px;
+    width: 370px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
 
-.item:nth-child(2){
-    background-color: #FF3147;
-}
+  .project-items .item:hover{
+    opacity: 0.9;
+    box-shadow: 3px 6px 20px #672C2C1F;
+  }
+  
+  .project-items .item.active {
+    background-color: #ff3147;
+    color: #ffffff;
+  }
+
+  .project-items .item.active p{
+    color: #ffffff;
+  }
+
 
 /******************
 Growth Section
